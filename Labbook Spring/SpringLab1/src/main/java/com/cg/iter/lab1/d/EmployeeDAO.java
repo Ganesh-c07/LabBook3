@@ -12,7 +12,7 @@ public void setEmplist(List<Employee> emplist) {
 }
 public Employee getDetails(int empId){
 	for(Employee data:emplist){
-		if(data.getEmployeeId()==empId)
+		if(data.getEmpId()==empId)
 			return data;
 	}
 	return null;

@@ -8,14 +8,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Client {
 public static void main(String[] args) {
 	ApplicationContext context=new ClassPathXmlApplicationContext("spring3.xml");
-	SBU sbu=context.getBean("sbu",Sbu.class);
+	Sbu sbu=context.getBean("sbu",Sbu.class);
 	System.out.println("SBU Details");
 	System.out.println("----------------------------");
 	System.out.println("SBU Details");
-	System.out.println("sbuCode: "+emp.getBuUnit().getSbuName());
-	System.out.println("sbuHead : "+emp.getBuUnit().getSbuHead());
-	System.out.println("sbuName : "+emp.getBuUnit().getSbuName());
-	System.out.println("Age: "+emp.getAge());
+	System.out.println("sbuCode: "+sbu.getSbuName());
+	System.out.println("sbuHead : "+sbu.getSbuHead());
+	System.out.println("sbuName : "+sbu.getSbuName());
 
 	System.out.println("Employee Details:----------------");
 	System.out.print("[");
